@@ -1,0 +1,19 @@
+
+<div class="footer-section">
+    {{#each model as |item|}}
+        <div class="box">
+            <ul>
+                <li>
+                    <h5>{{item.name}}</h5>
+                    {{#each item.information as |info|}}
+                        <p>{{info.information_1}}</p>
+                        <p>{{info.information_2}}</p>
+                        <p>{{info.information_3}}</p>
+                        <p>{{info.information_4}}</p>
+                        <p>{{info.information_5}}</p>
+                    {{/each}}
+                </li>
+            </ul>
+        </div>
+    {{/each}}
+</div>
